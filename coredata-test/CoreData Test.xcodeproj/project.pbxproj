@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F39CC11F1D78338B001674A1 /* StudentClass.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1171D78338B001674A1 /* StudentClass.h */; };
+		F39CC1201D78338B001674A1 /* StudentClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1181D78338B001674A1 /* StudentClass.m */; };
+		F39CC1211D78338B001674A1 /* StudentClass+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1191D78338B001674A1 /* StudentClass+CoreDataProperties.h */; };
+		F39CC1221D78338B001674A1 /* StudentClass+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC11A1D78338B001674A1 /* StudentClass+CoreDataProperties.m */; };
+		F39CC1231D78338B001674A1 /* Teacher.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC11B1D78338B001674A1 /* Teacher.h */; };
+		F39CC1241D78338B001674A1 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC11C1D78338B001674A1 /* Teacher.m */; };
+		F39CC1251D78338B001674A1 /* Teacher+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC11D1D78338B001674A1 /* Teacher+CoreDataProperties.h */; };
+		F39CC1261D78338B001674A1 /* Teacher+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC11E1D78338B001674A1 /* Teacher+CoreDataProperties.m */; };
+		F39CC12B1D78339C001674A1 /* DAOFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1271D78339C001674A1 /* DAOFactory.h */; };
+		F39CC12C1D78339C001674A1 /* DAOFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1281D78339C001674A1 /* DAOFactory.m */; };
+		F39CC12D1D78339C001674A1 /* DAOProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1291D78339C001674A1 /* DAOProtocol.h */; };
+		F39CC12E1D78339C001674A1 /* TeacherDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC12A1D78339C001674A1 /* TeacherDAO.h */; };
+		F39CC1331D7833A9001674A1 /* RootDAOImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC12F1D7833A9001674A1 /* RootDAOImpl.h */; };
+		F39CC1341D7833A9001674A1 /* RootDAOImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1301D7833A9001674A1 /* RootDAOImpl.m */; };
+		F39CC1351D7833A9001674A1 /* TeacherCoreDataDAOImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1311D7833A9001674A1 /* TeacherCoreDataDAOImpl.h */; };
+		F39CC1361D7833A9001674A1 /* TeacherCoreDataDAOImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1321D7833A9001674A1 /* TeacherCoreDataDAOImpl.m */; };
+		F39CC1391D7833BA001674A1 /* CoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1371D7833BA001674A1 /* CoreDataManager.h */; };
+		F39CC13A1D7833BA001674A1 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1381D7833BA001674A1 /* CoreDataManager.m */; };
+		F39CC13D1D7833D0001674A1 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC13B1D7833D0001674A1 /* AppDelegate.h */; };
+		F39CC13E1D7833D0001674A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC13C1D7833D0001674A1 /* AppDelegate.m */; };
+		F39CC1401D7833D8001674A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39CC13F1D7833D8001674A1 /* Assets.xcassets */; };
+		F39CC1431D7833EA001674A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39CC1411D7833EA001674A1 /* LaunchScreen.storyboard */; };
+		F39CC1441D7833EA001674A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39CC1421D7833EA001674A1 /* Main.storyboard */; };
+		F39CC1471D78340F001674A1 /* MainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1451D78340F001674A1 /* MainViewController.h */; };
+		F39CC1481D78340F001674A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1461D78340F001674A1 /* MainViewController.m */; };
+		F39CC14D1D783423001674A1 /* Defined.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1491D783423001674A1 /* Defined.h */; };
+		F39CC14E1D783423001674A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39CC14A1D783423001674A1 /* Info.plist */; };
+		F39CC14F1D783423001674A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC14B1D783423001674A1 /* main.m */; };
+		F39CC1501D783423001674A1 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = F39CC14C1D783423001674A1 /* PrefixHeader.pch */; };
+		F39CC1521D78344E001674A1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1511D78344E001674A1 /* Model.xcdatamodeld */; };
+		F3BF28A01BE9FBA6002AC4AE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BF289F1BE9FBA6002AC4AE /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F39CC1171D78338B001674A1 /* StudentClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentClass.h; path = "coredata-test/Model/StudentClass.h"; sourceTree = SOURCE_ROOT; };
+		F39CC1181D78338B001674A1 /* StudentClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentClass.m; path = "coredata-test/Model/StudentClass.m"; sourceTree = SOURCE_ROOT; };
+		F39CC1191D78338B001674A1 /* StudentClass+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "StudentClass+CoreDataProperties.h"; path = "coredata-test/Model/StudentClass+CoreDataProperties.h"; sourceTree = SOURCE_ROOT; };
+		F39CC11A1D78338B001674A1 /* StudentClass+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "StudentClass+CoreDataProperties.m"; path = "coredata-test/Model/StudentClass+CoreDataProperties.m"; sourceTree = SOURCE_ROOT; };
+		F39CC11B1D78338B001674A1 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Teacher.h; path = "coredata-test/Model/Teacher.h"; sourceTree = SOURCE_ROOT; };
+		F39CC11C1D78338B001674A1 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Teacher.m; path = "coredata-test/Model/Teacher.m"; sourceTree = SOURCE_ROOT; };
+		F39CC11D1D78338B001674A1 /* Teacher+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Teacher+CoreDataProperties.h"; path = "coredata-test/Model/Teacher+CoreDataProperties.h"; sourceTree = SOURCE_ROOT; };
+		F39CC11E1D78338B001674A1 /* Teacher+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Teacher+CoreDataProperties.m"; path = "coredata-test/Model/Teacher+CoreDataProperties.m"; sourceTree = SOURCE_ROOT; };
+		F39CC1271D78339C001674A1 /* DAOFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAOFactory.h; path = "coredata-test/DAO/DAOFactory.h"; sourceTree = SOURCE_ROOT; };
+		F39CC1281D78339C001674A1 /* DAOFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAOFactory.m; path = "coredata-test/DAO/DAOFactory.m"; sourceTree = SOURCE_ROOT; };
+		F39CC1291D78339C001674A1 /* DAOProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAOProtocol.h; path = "coredata-test/DAO/DAOProtocol.h"; sourceTree = SOURCE_ROOT; };
+		F39CC12A1D78339C001674A1 /* TeacherDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherDAO.h; path = "coredata-test/DAO/TeacherDAO.h"; sourceTree = SOURCE_ROOT; };
+		F39CC12F1D7833A9001674A1 /* RootDAOImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootDAOImpl.h; path = "coredata-test/DAO/CoreDataImpl/RootDAOImpl.h"; sourceTree = SOURCE_ROOT; };
+		F39CC1301D7833A9001674A1 /* RootDAOImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootDAOImpl.m; path = "coredata-test/DAO/CoreDataImpl/RootDAOImpl.m"; sourceTree = SOURCE_ROOT; };
+		F39CC1311D7833A9001674A1 /* TeacherCoreDataDAOImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherCoreDataDAOImpl.h; path = "coredata-test/DAO/CoreDataImpl/TeacherCoreDataDAOImpl.h"; sourceTree = SOURCE_ROOT; };
+		F39CC1321D7833A9001674A1 /* TeacherCoreDataDAOImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherCoreDataDAOImpl.m; path = "coredata-test/DAO/CoreDataImpl/TeacherCoreDataDAOImpl.m"; sourceTree = SOURCE_ROOT; };
+		F39CC1371D7833BA001674A1 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataManager.h; path = "coredata-test/Helpers/CoreDataManager.h"; sourceTree = SOURCE_ROOT; };
+		F39CC1381D7833BA001674A1 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataManager.m; path = "coredata-test/Helpers/CoreDataManager.m"; sourceTree = SOURCE_ROOT; };
+		F39CC13B1D7833D0001674A1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "coredata-test/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		F39CC13C1D7833D0001674A1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "coredata-test/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		F39CC13F1D7833D8001674A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "coredata-test/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		F39CC1411D7833EA001674A1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "coredata-test/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		F39CC1421D7833EA001674A1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "coredata-test/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		F39CC1451D78340F001674A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = "coredata-test/MainViewController.h"; sourceTree = SOURCE_ROOT; };
+		F39CC1461D78340F001674A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = "coredata-test/MainViewController.m"; sourceTree = SOURCE_ROOT; };
+		F39CC1491D783423001674A1 /* Defined.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Defined.h; path = "coredata-test/Defined.h"; sourceTree = SOURCE_ROOT; };
+		F39CC14A1D783423001674A1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "coredata-test/Info.plist"; sourceTree = SOURCE_ROOT; };
+		F39CC14B1D783423001674A1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "coredata-test/main.m"; sourceTree = SOURCE_ROOT; };
+		F39CC14C1D783423001674A1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "coredata-test/PrefixHeader.pch"; sourceTree = SOURCE_ROOT; };
+		F3BDBCDC1BD4FAC00036A70B /* CoreData Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3BF289F1BE9FBA6002AC4AE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3BDBCD91BD4FAC00036A70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BF28A01BE9FBA6002AC4AE /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F39986C61BECA0F1006724D7 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				F39986CD1BECA71F006724D7 /* CoreDataImpl */,
+				F39CC1271D78339C001674A1 /* DAOFactory.h */,
+				F39CC1281D78339C001674A1 /* DAOFactory.m */,
+				F39CC1291D78339C001674A1 /* DAOProtocol.h */,
+				F39CC12A1D78339C001674A1 /* TeacherDAO.h */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		F39986CD1BECA71F006724D7 /* CoreDataImpl */ = {
+			isa = PBXGroup;
+			children = (
+				F39CC12F1D7833A9001674A1 /* RootDAOImpl.h */,
+				F39CC1301D7833A9001674A1 /* RootDAOImpl.m */,
+				F39CC1311D7833A9001674A1 /* TeacherCoreDataDAOImpl.h */,
+				F39CC1321D7833A9001674A1 /* TeacherCoreDataDAOImpl.m */,
+			);
+			name = CoreDataImpl;
+			sourceTree = "<group>";
+		};
+		F3BDBCD31BD4FAC00036A70B = {
+			isa = PBXGroup;
+			children = (
+				F3BF289F1BE9FBA6002AC4AE /* CoreData.framework */,
+				F3BDBCDE1BD4FAC00036A70B /* coredate-test */,
+				F3BDBCDD1BD4FAC00036A70B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3BDBCDD1BD4FAC00036A70B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3BDBCDC1BD4FAC00036A70B /* CoreData Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3BDBCDE1BD4FAC00036A70B /* coredate-test */ = {
+			isa = PBXGroup;
+			children = (
+				F39CC1511D78344E001674A1 /* Model.xcdatamodeld */,
+				F3BF28AC1BEA35FA002AC4AE /* Model */,
+				F39986C61BECA0F1006724D7 /* DAO */,
+				F3D6A4421BD77347002CE54E /* Helpers */,
+				F39CC13B1D7833D0001674A1 /* AppDelegate.h */,
+				F39CC13C1D7833D0001674A1 /* AppDelegate.m */,
+				F39CC1411D7833EA001674A1 /* LaunchScreen.storyboard */,
+				F39CC1421D7833EA001674A1 /* Main.storyboard */,
+				F39CC1451D78340F001674A1 /* MainViewController.h */,
+				F39CC1461D78340F001674A1 /* MainViewController.m */,
+				F39CC13F1D7833D8001674A1 /* Assets.xcassets */,
+				F3BDBCDF1BD4FAC00036A70B /* Supporting Files */,
+			);
+			name = "coredate-test";
+			path = "cegid-mobiz";
+			sourceTree = "<group>";
+		};
+		F3BDBCDF1BD4FAC00036A70B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F39CC1491D783423001674A1 /* Defined.h */,
+				F39CC14A1D783423001674A1 /* Info.plist */,
+				F39CC14B1D783423001674A1 /* main.m */,
+				F39CC14C1D783423001674A1 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3BF28AC1BEA35FA002AC4AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F39CC1171D78338B001674A1 /* StudentClass.h */,
+				F39CC1181D78338B001674A1 /* StudentClass.m */,
+				F39CC1191D78338B001674A1 /* StudentClass+CoreDataProperties.h */,
+				F39CC11A1D78338B001674A1 /* StudentClass+CoreDataProperties.m */,
+				F39CC11B1D78338B001674A1 /* Teacher.h */,
+				F39CC11C1D78338B001674A1 /* Teacher.m */,
+				F39CC11D1D78338B001674A1 /* Teacher+CoreDataProperties.h */,
+				F39CC11E1D78338B001674A1 /* Teacher+CoreDataProperties.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F3D6A4421BD77347002CE54E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F39CC1371D7833BA001674A1 /* CoreDataManager.h */,
+				F39CC1381D7833BA001674A1 /* CoreDataManager.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F3A0F88D1BFF250100F80A62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39CC1501D783423001674A1 /* PrefixHeader.pch in Headers */,
+				F39CC1471D78340F001674A1 /* MainViewController.h in Headers */,
+				F39CC1331D7833A9001674A1 /* RootDAOImpl.h in Headers */,
+				F39CC1351D7833A9001674A1 /* TeacherCoreDataDAOImpl.h in Headers */,
+				F39CC12B1D78339C001674A1 /* DAOFactory.h in Headers */,
+				F39CC13D1D7833D0001674A1 /* AppDelegate.h in Headers */,
+				F39CC1211D78338B001674A1 /* StudentClass+CoreDataProperties.h in Headers */,
+				F39CC1231D78338B001674A1 /* Teacher.h in Headers */,
+				F39CC12E1D78339C001674A1 /* TeacherDAO.h in Headers */,
+				F39CC11F1D78338B001674A1 /* StudentClass.h in Headers */,
+				F39CC1391D7833BA001674A1 /* CoreDataManager.h in Headers */,
+				F39CC1251D78338B001674A1 /* Teacher+CoreDataProperties.h in Headers */,
+				F39CC12D1D78339C001674A1 /* DAOProtocol.h in Headers */,
+				F39CC14D1D783423001674A1 /* Defined.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F3BDBCDB1BD4FAC00036A70B /* CoreData Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3BDBD091BD4FAC00036A70B /* Build configuration list for PBXNativeTarget "CoreData Test" */;
+			buildPhases = (
+				F3BDBCD81BD4FAC00036A70B /* Sources */,
+				F3BDBCD91BD4FAC00036A70B /* Frameworks */,
+				F3BDBCDA1BD4FAC00036A70B /* Resources */,
+				F3A0F88D1BFF250100F80A62 /* Headers */,
+				1A0BCE831C48F63E0071D416 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreData Test";
+			productName = "cegid-mobiz";
+			productReference = F3BDBCDC1BD4FAC00036A70B /* CoreData Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3BDBCD41BD4FAC00036A70B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Keyrus;
+				TargetAttributes = {
+					F3BDBCDB1BD4FAC00036A70B = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 56UYYJ857L;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F3BDBCD71BD4FAC00036A70B /* Build configuration list for PBXProject "CoreData Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = F3BDBCD31BD4FAC00036A70B;
+			productRefGroup = F3BDBCDD1BD4FAC00036A70B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3BDBCDB1BD4FAC00036A70B /* CoreData Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3BDBCDA1BD4FAC00036A70B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39CC14E1D783423001674A1 /* Info.plist in Resources */,
+				F39CC1401D7833D8001674A1 /* Assets.xcassets in Resources */,
+				F39CC1441D7833EA001674A1 /* Main.storyboard in Resources */,
+				F39CC1431D7833EA001674A1 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A0BCE831C48F63E0071D416 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3BDBCD81BD4FAC00036A70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39CC14F1D783423001674A1 /* main.m in Sources */,
+				F39CC1361D7833A9001674A1 /* TeacherCoreDataDAOImpl.m in Sources */,
+				F39CC13A1D7833BA001674A1 /* CoreDataManager.m in Sources */,
+				F39CC1261D78338B001674A1 /* Teacher+CoreDataProperties.m in Sources */,
+				F39CC1341D7833A9001674A1 /* RootDAOImpl.m in Sources */,
+				F39CC1481D78340F001674A1 /* MainViewController.m in Sources */,
+				F39CC1221D78338B001674A1 /* StudentClass+CoreDataProperties.m in Sources */,
+				F39CC1201D78338B001674A1 /* StudentClass.m in Sources */,
+				F39CC1241D78338B001674A1 /* Teacher.m in Sources */,
+				F39CC13E1D7833D0001674A1 /* AppDelegate.m in Sources */,
+				F39CC12C1D78339C001674A1 /* DAOFactory.m in Sources */,
+				F39CC1521D78344E001674A1 /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F3BDBD071BD4FAC00036A70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3BDBD081BD4FAC00036A70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3BDBD0A1BD4FAC00036A70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "coredata-test/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "coredata-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocoaheads.coredatatest;
+				PRODUCT_NAME = "CoreData Test";
+				PROVISIONING_PROFILE = "e3344162-4a5b-439c-a108-ba8e1c8e474f";
+			};
+			name = Debug;
+		};
+		F3BDBD0B1BD4FAC00036A70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "coredata-test/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "coredata-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocoaheads.coredatatest;
+				PRODUCT_NAME = "CoreData Test";
+				PROVISIONING_PROFILE = "e3344162-4a5b-439c-a108-ba8e1c8e474f";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3BDBCD71BD4FAC00036A70B /* Build configuration list for PBXProject "CoreData Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3BDBD071BD4FAC00036A70B /* Debug */,
+				F3BDBD081BD4FAC00036A70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3BDBD091BD4FAC00036A70B /* Build configuration list for PBXNativeTarget "CoreData Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3BDBD0A1BD4FAC00036A70B /* Debug */,
+				F3BDBD0B1BD4FAC00036A70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F39CC1511D78344E001674A1 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+			);
+			name = Model.xcdatamodeld;
+			path = "../coredata-test/Model.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F3BDBCD41BD4FAC00036A70B /* Project object */;
+}
