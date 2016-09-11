@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		F312E08B1D85432E00168585 /* StudentClassCoreDataDAOImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F312E0891D85432E00168585 /* StudentClassCoreDataDAOImpl.h */; };
 		F312E08C1D85432E00168585 /* StudentClassCoreDataDAOImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F312E08A1D85432E00168585 /* StudentClassCoreDataDAOImpl.m */; };
+		F312E0901D85497800168585 /* TeacherRealmDAOImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F312E08E1D85497800168585 /* TeacherRealmDAOImpl.h */; };
+		F312E0911D85497800168585 /* TeacherRealmDAOImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F312E08F1D85497800168585 /* TeacherRealmDAOImpl.m */; };
+		F312E0941D8549D800168585 /* StudentClassRealmDAOImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F312E0921D8549D800168585 /* StudentClassRealmDAOImpl.h */; };
+		F312E0951D8549D800168585 /* StudentClassRealmDAOImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F312E0931D8549D800168585 /* StudentClassRealmDAOImpl.m */; };
+		F312E0981D854A0700168585 /* RootRealmDAOImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F312E0961D854A0700168585 /* RootRealmDAOImpl.h */; };
+		F312E0991D854A0700168585 /* RootRealmDAOImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F312E0971D854A0700168585 /* RootRealmDAOImpl.m */; };
 		F39CC11F1D78338B001674A1 /* StudentClass.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1171D78338B001674A1 /* StudentClass.h */; };
 		F39CC1201D78338B001674A1 /* StudentClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1181D78338B001674A1 /* StudentClass.m */; };
 		F39CC1211D78338B001674A1 /* StudentClass+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1191D78338B001674A1 /* StudentClass+CoreDataProperties.h */; };
@@ -21,8 +27,8 @@
 		F39CC12C1D78339C001674A1 /* DAOFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1281D78339C001674A1 /* DAOFactory.m */; };
 		F39CC12D1D78339C001674A1 /* DAOProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1291D78339C001674A1 /* DAOProtocol.h */; };
 		F39CC12E1D78339C001674A1 /* TeacherDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC12A1D78339C001674A1 /* TeacherDAO.h */; };
-		F39CC1331D7833A9001674A1 /* RootDAOImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC12F1D7833A9001674A1 /* RootDAOImpl.h */; };
-		F39CC1341D7833A9001674A1 /* RootDAOImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1301D7833A9001674A1 /* RootDAOImpl.m */; };
+		F39CC1331D7833A9001674A1 /* RootCoreDataDAOImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC12F1D7833A9001674A1 /* RootCoreDataDAOImpl.h */; };
+		F39CC1341D7833A9001674A1 /* RootCoreDataDAOImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1301D7833A9001674A1 /* RootCoreDataDAOImpl.m */; };
 		F39CC1351D7833A9001674A1 /* TeacherCoreDataDAOImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1311D7833A9001674A1 /* TeacherCoreDataDAOImpl.h */; };
 		F39CC1361D7833A9001674A1 /* TeacherCoreDataDAOImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1321D7833A9001674A1 /* TeacherCoreDataDAOImpl.m */; };
 		F39CC1391D7833BA001674A1 /* CoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1371D7833BA001674A1 /* CoreDataManager.h */; };
@@ -46,6 +52,12 @@
 		F312E0881D8542C600168585 /* StudentClassDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StudentClassDAO.h; path = DAO/StudentClassDAO.h; sourceTree = "<group>"; };
 		F312E0891D85432E00168585 /* StudentClassCoreDataDAOImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentClassCoreDataDAOImpl.h; path = DAO/CoreDataImpl/StudentClassCoreDataDAOImpl.h; sourceTree = "<group>"; };
 		F312E08A1D85432E00168585 /* StudentClassCoreDataDAOImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentClassCoreDataDAOImpl.m; path = DAO/CoreDataImpl/StudentClassCoreDataDAOImpl.m; sourceTree = "<group>"; };
+		F312E08E1D85497800168585 /* TeacherRealmDAOImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherRealmDAOImpl.h; path = DAO/RealmImpl/TeacherRealmDAOImpl.h; sourceTree = "<group>"; };
+		F312E08F1D85497800168585 /* TeacherRealmDAOImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherRealmDAOImpl.m; path = DAO/RealmImpl/TeacherRealmDAOImpl.m; sourceTree = "<group>"; };
+		F312E0921D8549D800168585 /* StudentClassRealmDAOImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentClassRealmDAOImpl.h; path = DAO/RealmImpl/StudentClassRealmDAOImpl.h; sourceTree = "<group>"; };
+		F312E0931D8549D800168585 /* StudentClassRealmDAOImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentClassRealmDAOImpl.m; path = DAO/RealmImpl/StudentClassRealmDAOImpl.m; sourceTree = "<group>"; };
+		F312E0961D854A0700168585 /* RootRealmDAOImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootRealmDAOImpl.h; path = DAO/RealmImpl/RootRealmDAOImpl.h; sourceTree = "<group>"; };
+		F312E0971D854A0700168585 /* RootRealmDAOImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootRealmDAOImpl.m; path = DAO/RealmImpl/RootRealmDAOImpl.m; sourceTree = "<group>"; };
 		F39CC1171D78338B001674A1 /* StudentClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentClass.h; path = "coredata-test/Model/StudentClass.h"; sourceTree = SOURCE_ROOT; };
 		F39CC1181D78338B001674A1 /* StudentClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentClass.m; path = "coredata-test/Model/StudentClass.m"; sourceTree = SOURCE_ROOT; };
 		F39CC1191D78338B001674A1 /* StudentClass+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "StudentClass+CoreDataProperties.h"; path = "coredata-test/Model/StudentClass+CoreDataProperties.h"; sourceTree = SOURCE_ROOT; };
@@ -58,8 +70,8 @@
 		F39CC1281D78339C001674A1 /* DAOFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAOFactory.m; path = "coredata-test/DAO/DAOFactory.m"; sourceTree = SOURCE_ROOT; };
 		F39CC1291D78339C001674A1 /* DAOProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAOProtocol.h; path = "coredata-test/DAO/DAOProtocol.h"; sourceTree = SOURCE_ROOT; };
 		F39CC12A1D78339C001674A1 /* TeacherDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherDAO.h; path = "coredata-test/DAO/TeacherDAO.h"; sourceTree = SOURCE_ROOT; };
-		F39CC12F1D7833A9001674A1 /* RootDAOImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootDAOImpl.h; path = "coredata-test/DAO/CoreDataImpl/RootDAOImpl.h"; sourceTree = SOURCE_ROOT; };
-		F39CC1301D7833A9001674A1 /* RootDAOImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootDAOImpl.m; path = "coredata-test/DAO/CoreDataImpl/RootDAOImpl.m"; sourceTree = SOURCE_ROOT; };
+		F39CC12F1D7833A9001674A1 /* RootCoreDataDAOImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootCoreDataDAOImpl.h; path = "coredata-test/DAO/CoreDataImpl/RootCoreDataDAOImpl.h"; sourceTree = SOURCE_ROOT; };
+		F39CC1301D7833A9001674A1 /* RootCoreDataDAOImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootCoreDataDAOImpl.m; path = "coredata-test/DAO/CoreDataImpl/RootCoreDataDAOImpl.m"; sourceTree = SOURCE_ROOT; };
 		F39CC1311D7833A9001674A1 /* TeacherCoreDataDAOImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherCoreDataDAOImpl.h; path = "coredata-test/DAO/CoreDataImpl/TeacherCoreDataDAOImpl.h"; sourceTree = SOURCE_ROOT; };
 		F39CC1321D7833A9001674A1 /* TeacherCoreDataDAOImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherCoreDataDAOImpl.m; path = "coredata-test/DAO/CoreDataImpl/TeacherCoreDataDAOImpl.m"; sourceTree = SOURCE_ROOT; };
 		F39CC1371D7833BA001674A1 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataManager.h; path = "coredata-test/Helpers/CoreDataManager.h"; sourceTree = SOURCE_ROOT; };
@@ -92,9 +104,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F312E08D1D85492600168585 /* RealmImpl (fake) */ = {
+			isa = PBXGroup;
+			children = (
+				F312E0961D854A0700168585 /* RootRealmDAOImpl.h */,
+				F312E0971D854A0700168585 /* RootRealmDAOImpl.m */,
+				F312E08E1D85497800168585 /* TeacherRealmDAOImpl.h */,
+				F312E08F1D85497800168585 /* TeacherRealmDAOImpl.m */,
+				F312E0921D8549D800168585 /* StudentClassRealmDAOImpl.h */,
+				F312E0931D8549D800168585 /* StudentClassRealmDAOImpl.m */,
+			);
+			name = "RealmImpl (fake)";
+			sourceTree = "<group>";
+		};
 		F39986C61BECA0F1006724D7 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				F312E08D1D85492600168585 /* RealmImpl (fake) */,
 				F39986CD1BECA71F006724D7 /* CoreDataImpl */,
 				F39CC1271D78339C001674A1 /* DAOFactory.h */,
 				F39CC1281D78339C001674A1 /* DAOFactory.m */,
@@ -108,8 +134,8 @@
 		F39986CD1BECA71F006724D7 /* CoreDataImpl */ = {
 			isa = PBXGroup;
 			children = (
-				F39CC12F1D7833A9001674A1 /* RootDAOImpl.h */,
-				F39CC1301D7833A9001674A1 /* RootDAOImpl.m */,
+				F39CC12F1D7833A9001674A1 /* RootCoreDataDAOImpl.h */,
+				F39CC1301D7833A9001674A1 /* RootCoreDataDAOImpl.m */,
 				F39CC1311D7833A9001674A1 /* TeacherCoreDataDAOImpl.h */,
 				F39CC1321D7833A9001674A1 /* TeacherCoreDataDAOImpl.m */,
 				F312E0891D85432E00168585 /* StudentClassCoreDataDAOImpl.h */,
@@ -198,11 +224,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F312E08B1D85432E00168585 /* StudentClassCoreDataDAOImpl.h in Headers */,
+				F312E0981D854A0700168585 /* RootRealmDAOImpl.h in Headers */,
 				F39CC1501D783423001674A1 /* PrefixHeader.pch in Headers */,
 				F39CC1471D78340F001674A1 /* MainViewController.h in Headers */,
-				F39CC1331D7833A9001674A1 /* RootDAOImpl.h in Headers */,
+				F39CC1331D7833A9001674A1 /* RootCoreDataDAOImpl.h in Headers */,
 				F39CC1351D7833A9001674A1 /* TeacherCoreDataDAOImpl.h in Headers */,
 				F39CC12B1D78339C001674A1 /* DAOFactory.h in Headers */,
+				F312E0941D8549D800168585 /* StudentClassRealmDAOImpl.h in Headers */,
 				F39CC13D1D7833D0001674A1 /* AppDelegate.h in Headers */,
 				F39CC1211D78338B001674A1 /* StudentClass+CoreDataProperties.h in Headers */,
 				F39CC1231D78338B001674A1 /* Teacher.h in Headers */,
@@ -211,6 +239,7 @@
 				F39CC1391D7833BA001674A1 /* CoreDataManager.h in Headers */,
 				F39CC1251D78338B001674A1 /* Teacher+CoreDataProperties.h in Headers */,
 				F39CC12D1D78339C001674A1 /* DAOProtocol.h in Headers */,
+				F312E0901D85497800168585 /* TeacherRealmDAOImpl.h in Headers */,
 				F39CC14D1D783423001674A1 /* Defined.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,15 +341,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F39CC14F1D783423001674A1 /* main.m in Sources */,
+				F312E0911D85497800168585 /* TeacherRealmDAOImpl.m in Sources */,
 				F39CC1361D7833A9001674A1 /* TeacherCoreDataDAOImpl.m in Sources */,
 				F39CC13A1D7833BA001674A1 /* CoreDataManager.m in Sources */,
 				F312E08C1D85432E00168585 /* StudentClassCoreDataDAOImpl.m in Sources */,
 				F39CC1261D78338B001674A1 /* Teacher+CoreDataProperties.m in Sources */,
-				F39CC1341D7833A9001674A1 /* RootDAOImpl.m in Sources */,
+				F39CC1341D7833A9001674A1 /* RootCoreDataDAOImpl.m in Sources */,
 				F39CC1481D78340F001674A1 /* MainViewController.m in Sources */,
+				F312E0991D854A0700168585 /* RootRealmDAOImpl.m in Sources */,
 				F39CC1221D78338B001674A1 /* StudentClass+CoreDataProperties.m in Sources */,
 				F39CC1201D78338B001674A1 /* StudentClass.m in Sources */,
 				F39CC1241D78338B001674A1 /* Teacher.m in Sources */,
+				F312E0951D8549D800168585 /* StudentClassRealmDAOImpl.m in Sources */,
 				F39CC13E1D7833D0001674A1 /* AppDelegate.m in Sources */,
 				F39CC12C1D78339C001674A1 /* DAOFactory.m in Sources */,
 				F3DE1A201D787A3E00E590D1 /* Model.xcdatamodeld in Sources */,

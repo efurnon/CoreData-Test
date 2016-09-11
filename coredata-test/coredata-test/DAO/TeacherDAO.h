@@ -17,29 +17,25 @@
 @protocol TeacherDAO <DAOProtocol>
 
 /*!
- @method newManagedObject
+ @method newObject
  @abstract Method which create a new default Teacher.
- @discussion This method is MANDATORY for CoreData and must be used instead of
- Teacher init:.
-             The link with CoreData is managed by a context which must be
- initialize when the object is created.
- @return The TeacherCoreDataDAOImpl instance.
+ @return A new Teacher.
  */
-- (Teacher *)newManagedObject;
+- (Teacher *)newObject;
 
 /*!
- @method saveManagedObject:
+ @method save:
  @abstract Save a modified Teacher.
  @param teacher : The modified Teacher.
  */
-- (void)saveManagedObject:(Teacher *)teacher;
+- (void)saveObject:(Teacher *)teacher;
 
 /*!
- @method deleteManagedObject:
+ @method deleteObject:
  @abstract Delete an Teacher.
  @param teacher : the Teacher to delete.
  */
-- (void)deleteManagedObject:(Teacher *)teacher;
+- (void)deleteObject:(Teacher *)teacher;
 
 /*!
  @method deleteAll:
@@ -48,11 +44,11 @@
 - (void)deleteAll;
 
 /*!
- @method allManagedObjects
+ @method allObjects
  @abstract Get all Teachers.
  @return An array of Teachers.
  */
-- (NSArray *)allManagedObjects;
+- (NSArray *)allObjects;
 
 /*!
  @method listByPredicate:fallback:

@@ -32,13 +32,13 @@
 }
 
 // Create a new StudentClass.
-- (StudentClass *)newManagedObject
+- (StudentClass *)newObject
 {
     return (StudentClass *)[super new:[StudentClass class]];
 }
 
 // Save the modified StudentClass.
-- (void)saveManagedObject:(StudentClass *)studentClass
+- (void)saveObject:(StudentClass *)studentClass
 {
     NSError *error;
     [super save:error];
@@ -50,14 +50,21 @@
 }
 
 // Get all StudentClasses.
-- (NSArray *)allManagedObjects
+- (NSArray *)allObjects
 {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:NSStringFromClass ([StudentClass class])];
     return [self studentClassByFetchRequest:fetchRequest];
 }
 
+- (NSArray *)classesWhoseCountMoreThan:(NSInteger)minCount
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"studentsCount == %lu", minCount];
+    
+    return [self listByPredicate:predicate fallback:[NSArray array]];
+}
+
 // Delete StudentClass.
-- (void)deleteManagedObject:(StudentClass *)studentClass
+- (void)deleteObject:(StudentClass *)studentClass
 {
     NSError *error;
     
@@ -73,7 +80,7 @@
 - (void)deleteAll
 {
     NSError *error;
-    NSArray *all = [self allManagedObjects];
+    NSArray *all = [self allObjects];
     
     for(StudentClass *t in all)
     {

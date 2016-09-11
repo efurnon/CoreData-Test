@@ -67,6 +67,13 @@
     }
 }
 
++ (NSArray *)classesWhoseCountMoreThan:(NSInteger)minCount
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"studentsCount == %lu", minCount];
+    
+    return [StudentClass listByPredicate:predicate fallback:[NSArray array]];
+}
+
 // Delete all StudentClasses.
 + (void)deleteAll
 {

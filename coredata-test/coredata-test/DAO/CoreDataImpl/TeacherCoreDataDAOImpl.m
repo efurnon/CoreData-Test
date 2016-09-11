@@ -32,13 +32,13 @@
 }
 
 // Create a new Teacher.
-- (Teacher *)newManagedObject
+- (Teacher *)newObject
 {
     return (Teacher *)[super new:[Teacher class]];
 }
 
 // Save the modified Teacher.
-- (void)saveManagedObject:(Teacher *)teacher
+- (void)saveObject:(Teacher *)teacher
 {
     NSError *error;
     [super save:error];
@@ -50,14 +50,14 @@
 }
 
 // Get all Teachers.
-- (NSArray *)allManagedObjects
+- (NSArray *)allObjects
 {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:NSStringFromClass ([Teacher class])];
     return [self teacherByFetchRequest:fetchRequest];
 }
 
 // Delete Teacher.
-- (void)deleteManagedObject:(Teacher *)teacher
+- (void)deleteObject:(Teacher *)teacher
 {
     NSError *error;
 
@@ -73,7 +73,7 @@
 - (void)deleteAll
 {
     NSError *error;
-    NSArray *all = [self allManagedObjects];
+    NSArray *all = [self allObjects];
     
     for(Teacher *t in all)
     {

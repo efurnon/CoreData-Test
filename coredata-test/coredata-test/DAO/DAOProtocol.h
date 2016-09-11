@@ -9,17 +9,14 @@
 @protocol DAOProtocol
 
 @required
-- (NSManagedObject *)newManagedObject;
+- (NSObject *)newObject;
 
-- (void)saveManagedObject:(NSManagedObject *)account;
+- (void)saveObject:(NSObject *)account;
 
-- (void)deleteManagedObject:(NSManagedObject *)account;
+- (void)deleteObject:(NSObject *)account;
 
-- (NSArray *)allManagedObjects;
+- (NSArray *)allObjects;
 
 - (NSArray *)listByPredicate:(NSPredicate *)predicate fallback:(NSArray *)list;
-
-@optional
-- (void)saveManagedObject:(NSManagedObject *)account audit:(BOOL)audit;
 
 @end

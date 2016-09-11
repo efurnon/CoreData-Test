@@ -6,16 +6,27 @@
 //  Copyright © 2016 Emmanuel Furnon. All rights reserved.
 //
 
+#import "StudentClassCoreDataDAOImpl.h"
 #import "TeacherCoreDataDAOImpl.h"
-#import "CoreDataManager.h"
+
+#import "StudentClassRealmDAOImpl.h"
+#import "TeacherRealmDAOImpl.h"
+
 #import "DAOFactory.h"
 
 /*!
  @constant CORE_DATA_MODE
  @abstract Name of CoreData mode
- @discussion Used to force the use of CordeDataDAOImpl to manage local database.
+ @discussion Used to force the use of CoreDataDAOImpl to manage local database.
  */
 static NSString *CORE_DATA_MODE = @"CORE_DATA";
+
+/*!
+ @constant REALM_MODE
+ @abstract Name of Realm mode
+ @discussion Used to force the use of RealmDAOImpl to manage local database.
+ */
+static NSString *REALM_MODE = @"REALM";
 
 /*!
  @constant PERSISTENCE_MODE
@@ -24,12 +35,7 @@ static NSString *CORE_DATA_MODE = @"CORE_DATA";
  */
 static NSString *PERSISTENCE_MODE = @"CORE_DATA";
 
-@interface DAOFactory ()
-
-@end
-
 @implementation DAOFactory
-
 
 #pragma mark -
 #pragma mark Instance methods
@@ -50,12 +56,6 @@ static NSString *PERSISTENCE_MODE = @"CORE_DATA";
 #pragma mark -
 #pragma mark Public methods
 
-// Access the Managed Object Context.
-+ (NSManagedObjectContext *)managedObjectContext
-{
-    return [CoreDataManager managedObjectContext];
-}
-
 // Get an TeacherDAOImpl.
 + (NSObject<TeacherDAO> *)teacherDAO
 {
@@ -65,7 +65,27 @@ static NSString *PERSISTENCE_MODE = @"CORE_DATA";
     {
         dao = [[TeacherCoreDataDAOImpl alloc] init];
     }
+    else if ([PERSISTENCE_MODE isEqualToString:REALM_MODE])
+    {
+        dao = [[TeacherRealmDAOImpl alloc] init];
+    }
 
+    return dao;
+}
+
++ (NSObject<StudentClassDAO> *)studentClassDAO
+{
+    NSObject<StudentClassDAO> *dao = nil;
+    
+    if ([PERSISTENCE_MODE isEqualToString:CORE_DATA_MODE])
+    {
+        dao = [[StudentClassCoreDataDAOImpl alloc] init];
+    }
+    else if ([PERSISTENCE_MODE isEqualToString:REALM_MODE])
+    {
+        dao = [[StudentClassRealmDAOImpl alloc] init];
+    }
+    
     return dao;
 }
 

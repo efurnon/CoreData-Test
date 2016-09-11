@@ -8,13 +8,13 @@
 
 #import "TeacherDAO.h"
 
-#import "RootDAOImpl.h"
+#import "RootCoreDataDAOImpl.h"
 
 /*!
  @class TeacherCoreDataDAOImpl
  @abstract Manage interaction with the coredata managed object Teacher.
  @discussion Inherite from protocol TeacherDAO.
  */
-@interface TeacherCoreDataDAOImpl : RootDAOImpl <TeacherDAO>
+@interface TeacherCoreDataDAOImpl : RootCoreDataDAOImpl <TeacherDAO>
 
 @end

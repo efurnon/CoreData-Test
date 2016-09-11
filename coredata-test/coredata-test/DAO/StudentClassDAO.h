@@ -17,29 +17,25 @@
 @protocol StudentClassDAO <DAOProtocol>
 
 /*!
- @method newManagedObject
+ @method newObject
  @abstract Method which create a new default StudentClass.
- @discussion This method is MANDATORY for CoreData and must be used instead of
- StudentClass init:.
- The link with CoreData is managed by a context which must be
- initialize when the object is created.
- @return The StudentClassCoreDataDAOImpl instance.
+ @return A new StudentClass.
  */
-- (StudentClass *)newManagedObject;
+- (StudentClass *)newObject;
 
 /*!
- @method saveManagedObject:
+ @method saveObject:
  @abstract Save a modified StudentClass.
  @param studentClass : The modified StudentClass.
  */
-- (void)saveManagedObject:(StudentClass *)studentClass;
+- (void)saveObject:(StudentClass *)studentClass;
 
 /*!
- @method deleteManagedObject:
+ @method deleteObject:
  @abstract Delete an StudentClass.
  @param studentClass : the StudentClass to delete.
  */
-- (void)deleteManagedObject:(StudentClass *)studentClass;
+- (void)deleteObject:(StudentClass *)studentClass;
 
 /*!
  @method deleteAll:
@@ -48,11 +44,19 @@
 - (void)deleteAll;
 
 /*!
- @method allManagedObjects
+ @method allObjects
  @abstract Get all StudentClasses.
  @return An array of StudentClasses.
  */
-- (NSArray *)allManagedObjects;
+- (NSArray *)allObjects;
+
+/*!
+ @method classesWhoseCountMoreThan
+ @abstract Get all StudentClasses whose count is more than a minimum count.
+ @param minCount : the minimum count of StudentClasses to find.
+ @return An array of StudentClasses.
+ */
+- (NSArray *)classesWhoseCountMoreThan:(NSInteger)minCount;
 
 /*!
  @method listByPredicate:fallback:

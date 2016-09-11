@@ -6,6 +6,7 @@
 //  Copyright © 2016 Emmanuel Furnon. All rights reserved.
 //
 
+#import "StudentClassDAO.h"
 #import "TeacherDAO.h"
 
 /*!
@@ -22,5 +23,12 @@
  @return The TeacherDAOImpl.
  */
 + (NSObject<TeacherDAO> *)teacherDAO;
+
+/*!
+ @method studentClassDAO
+ @abstract Get an StudentClassDAOImpl.
+ @return The StudentClassDAOImpl.
+ */
++ (NSObject<StudentClassDAO> *)studentClassDAO;
 
 @end

@@ -30,6 +30,14 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSArray *)allStudentClasses;
 
 /*!
+ @method classesWhoseCountMoreThan
+ @abstract Get all StudentClasses whose count is more than a minimum count.
+ @param minCount : the minimum count of StudentClasses to find.
+ @return An array of StudentClasses.
+ */
++ (NSArray *)classesWhoseCountMoreThan:(NSInteger)minCount;
+
+/*!
  @method deleteStudentClass
  @abstract Delete the StudentClass from data source.
  @param studentClass : the StudentClass to delete.
@@ -41,7 +49,6 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract Delete all StudentClasses from data source.
  */
 + (void)deleteAll;
-
 
 @end
 
