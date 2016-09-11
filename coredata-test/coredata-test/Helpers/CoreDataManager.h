@@ -20,7 +20,7 @@ static NSString *TEST_SQLITE_PATH = @"test_coredata.db";
  @abstract Access the Managed Object Context.
  @return Return the NSManagedObjectContext.
  */
-- (NSManagedObjectContext *)managedObjectContext;
++ (NSManagedObjectContext *)managedObjectContext;
 
 - (void)removeDatabase;
 

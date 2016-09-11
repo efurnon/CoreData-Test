@@ -25,7 +25,7 @@
     
     if (self)
     {
-        self.teacherDAOQueue = dispatch_queue_create("com.keyrus.mobiz.teacherDAOQueue", NULL);
+        self.teacherDAOQueue = dispatch_queue_create("com.coredatatest.teacherDAOQueue", NULL);
     }
     
     return self;
@@ -105,7 +105,7 @@
     
     dispatch_sync(self.teacherDAOQueue, ^{
         
-        returnValue = [[DAOFactory managedObjectContext] executeFetchRequest:fetchRequest  error:nil];
+        returnValue = [[CoreDataManager managedObjectContext] executeFetchRequest:fetchRequest error:nil];
     });
     
     return returnValue;

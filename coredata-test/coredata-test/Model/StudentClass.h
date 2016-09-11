@@ -3,16 +3,45 @@
 //  CoreData Test
 //
 //  Created by Emmanuel Furnon on 01/09/2016.
-//  Copyright © 2016 Keyrus. All rights reserved.
+//  Copyright © 2016 Emmanuel Furnon. All rights reserved.
 //
 
-@class Teacher;
+@class StudentClass;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface StudentClass : NSManagedObject
 
-// Insert code here to declare functionality of your managed object subclass
+#pragma mark -
+#pragma mark Instance methods
+/*!
+ @method save
+ @abstract Save the StudentClass in data source.
+ */
+- (void)save;
+
+#pragma mark -
+#pragma mark Class methods
+/*!
+ @method allStudentClasses
+ @abstract Retrieve all StudentClasses from data source.
+ @return Return all StudentClasses.
+ */
++ (NSArray *)allStudentClasses;
+
+/*!
+ @method deleteStudentClass
+ @abstract Delete the StudentClass from data source.
+ @param studentClass : the StudentClass to delete.
+ */
++ (void)deleteStudentClass:(StudentClass *)studentClass;
+
+/*!
+ @method deleteAll
+ @abstract Delete all StudentClasses from data source.
+ */
++ (void)deleteAll;
+
 
 @end
 

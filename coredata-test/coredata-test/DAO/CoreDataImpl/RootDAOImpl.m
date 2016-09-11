@@ -9,6 +9,7 @@
 #import "RootDAOImpl.h"
 
 #import "DAOFactory.h"
+#import "CoreDataManager.h"
 
 @implementation RootDAOImpl
 
@@ -30,7 +31,7 @@
 
     @synchronized([RootDAOImpl class])
     {
-        object = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass(class) inManagedObjectContext:[DAOFactory managedObjectContext]];
+        object = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass(class) inManagedObjectContext:[CoreDataManager managedObjectContext]];
     }
 
     return object;
@@ -41,7 +42,7 @@
 {
     @synchronized([RootDAOImpl class])
     {
-        [[DAOFactory managedObjectContext] save:&error];
+        [[CoreDataManager managedObjectContext] save:&error];
     }
 }
 
@@ -50,8 +51,8 @@
 {
     @synchronized([RootDAOImpl class])
     {
-        [[DAOFactory managedObjectContext] deleteObject:object];
-        [[DAOFactory managedObjectContext] save:&error];
+        [[CoreDataManager managedObjectContext] deleteObject:object];
+        [[CoreDataManager managedObjectContext] save:&error];
     }
 }
 
@@ -64,7 +65,7 @@
 
     @synchronized([RootDAOImpl class])
     {
-        list = [[DAOFactory managedObjectContext] executeFetchRequest:fetchRequest error:&error];
+        list = [[CoreDataManager managedObjectContext] executeFetchRequest:fetchRequest error:&error];
     }
 
     return list;

@@ -17,13 +17,6 @@
 @interface DAOFactory : NSObject
 
 /*!
- @method managedObjectContext
- @abstract Access the Managed Object Context.
- @return Return the NSManagedObjectContext.
- */
-+ (NSManagedObjectContext *)managedObjectContext;
-
-/*!
  @method teacherDAO
  @abstract Get an TeacherDAOImpl.
  @return The TeacherDAOImpl.

@@ -46,11 +46,6 @@ static NSString *PERSISTENCE_MODE = @"CORE_DATA";
     return _sharedInstance;
 }
 
-- (NSManagedObjectContext *)managedObjectContext
-{
-    return [[CoreDataManager instance] managedObjectContext];
-}
-
 
 #pragma mark -
 #pragma mark Public methods
@@ -58,7 +53,7 @@ static NSString *PERSISTENCE_MODE = @"CORE_DATA";
 // Access the Managed Object Context.
 + (NSManagedObjectContext *)managedObjectContext
 {
-    return [[DAOFactory instance] managedObjectContext];
+    return [CoreDataManager managedObjectContext];
 }
 
 // Get an TeacherDAOImpl.

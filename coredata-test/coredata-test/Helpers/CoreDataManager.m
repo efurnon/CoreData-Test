@@ -67,6 +67,12 @@
     return _managedObjectContext;
 }
 
+// Access the Managed Object Context.
++ (NSManagedObjectContext *)managedObjectContext
+{
+    return [[CoreDataManager instance] managedObjectContext];
+}
+
 - (NSURL *)storeUrl
 {
     NSString *sqlitePath = self.runMode ? RUN_SQLITE_PATH : TEST_SQLITE_PATH;
