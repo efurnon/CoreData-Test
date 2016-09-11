@@ -38,22 +38,6 @@ static NSString *PERSISTENCE_MODE = @"CORE_DATA";
 @implementation DAOFactory
 
 #pragma mark -
-#pragma mark Instance methods
-
-+ (instancetype)instance
-{
-    static DAOFactory *_sharedInstance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once (&onceToken, ^{
-
-      _sharedInstance = [[DAOFactory alloc] init];
-    });
-
-    return _sharedInstance;
-}
-
-
-#pragma mark -
 #pragma mark Public methods
 
 // Get an TeacherDAOImpl.
