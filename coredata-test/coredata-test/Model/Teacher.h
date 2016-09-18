@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Teacher : NSManagedObject
 
+- (NSString *)summary;
+
 #pragma mark -
 #pragma mark Instance methods
 

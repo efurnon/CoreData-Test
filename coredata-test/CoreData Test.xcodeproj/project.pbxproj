@@ -15,6 +15,13 @@
 		F312E0951D8549D800168585 /* StudentClassRealmDAOImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F312E0931D8549D800168585 /* StudentClassRealmDAOImpl.m */; };
 		F312E0981D854A0700168585 /* RootRealmDAOImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F312E0961D854A0700168585 /* RootRealmDAOImpl.h */; };
 		F312E0991D854A0700168585 /* RootRealmDAOImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F312E0971D854A0700168585 /* RootRealmDAOImpl.m */; };
+		F326402C1D8B0F8D001C160E /* DAOTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = F326402A1D8B0F8D001C160E /* DAOTableView.h */; };
+		F326402D1D8B0F8D001C160E /* DAOTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F326402B1D8B0F8D001C160E /* DAOTableView.m */; };
+		F32640301D8B0FA6001C160E /* ActiveRecordTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = F326402E1D8B0FA6001C160E /* ActiveRecordTableView.h */; };
+		F32640311D8B0FA6001C160E /* ActiveRecordTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F326402F1D8B0FA6001C160E /* ActiveRecordTableView.m */; };
+		F32640351D8B0FD0001C160E /* TeacherTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F32640321D8B0FD0001C160E /* TeacherTableViewCell.h */; };
+		F32640361D8B0FD0001C160E /* TeacherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F32640331D8B0FD0001C160E /* TeacherTableViewCell.m */; };
+		F32640371D8B0FD0001C160E /* TeacherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32640341D8B0FD0001C160E /* TeacherTableViewCell.xib */; };
 		F39CC11F1D78338B001674A1 /* StudentClass.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1171D78338B001674A1 /* StudentClass.h */; };
 		F39CC1201D78338B001674A1 /* StudentClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1181D78338B001674A1 /* StudentClass.m */; };
 		F39CC1211D78338B001674A1 /* StudentClass+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1191D78338B001674A1 /* StudentClass+CoreDataProperties.h */; };
@@ -41,10 +48,11 @@
 		F39CC1471D78340F001674A1 /* MainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1451D78340F001674A1 /* MainViewController.h */; };
 		F39CC1481D78340F001674A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC1461D78340F001674A1 /* MainViewController.m */; };
 		F39CC14D1D783423001674A1 /* Defined.h in Headers */ = {isa = PBXBuildFile; fileRef = F39CC1491D783423001674A1 /* Defined.h */; };
-		F39CC14E1D783423001674A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39CC14A1D783423001674A1 /* Info.plist */; };
 		F39CC14F1D783423001674A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CC14B1D783423001674A1 /* main.m */; };
 		F39CC1501D783423001674A1 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = F39CC14C1D783423001674A1 /* PrefixHeader.pch */; };
 		F3BF28A01BE9FBA6002AC4AE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BF289F1BE9FBA6002AC4AE /* CoreData.framework */; };
+		F3C4DE511D8F178400D5F57F /* BaseTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = F3C4DE4F1D8F178400D5F57F /* BaseTableView.h */; };
+		F3C4DE521D8F178400D5F57F /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C4DE501D8F178400D5F57F /* BaseTableView.m */; };
 		F3DE1A201D787A3E00E590D1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3DE1A1E1D787A3E00E590D1 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +66,13 @@
 		F312E0931D8549D800168585 /* StudentClassRealmDAOImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentClassRealmDAOImpl.m; path = DAO/RealmImpl/StudentClassRealmDAOImpl.m; sourceTree = "<group>"; };
 		F312E0961D854A0700168585 /* RootRealmDAOImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootRealmDAOImpl.h; path = DAO/RealmImpl/RootRealmDAOImpl.h; sourceTree = "<group>"; };
 		F312E0971D854A0700168585 /* RootRealmDAOImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootRealmDAOImpl.m; path = DAO/RealmImpl/RootRealmDAOImpl.m; sourceTree = "<group>"; };
+		F326402A1D8B0F8D001C160E /* DAOTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAOTableView.h; path = UI/DAOTableView.h; sourceTree = "<group>"; };
+		F326402B1D8B0F8D001C160E /* DAOTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAOTableView.m; path = UI/DAOTableView.m; sourceTree = "<group>"; };
+		F326402E1D8B0FA6001C160E /* ActiveRecordTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActiveRecordTableView.h; path = UI/ActiveRecordTableView.h; sourceTree = "<group>"; };
+		F326402F1D8B0FA6001C160E /* ActiveRecordTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActiveRecordTableView.m; path = UI/ActiveRecordTableView.m; sourceTree = "<group>"; };
+		F32640321D8B0FD0001C160E /* TeacherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherTableViewCell.h; path = UI/TeacherTableViewCell.h; sourceTree = "<group>"; };
+		F32640331D8B0FD0001C160E /* TeacherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherTableViewCell.m; path = UI/TeacherTableViewCell.m; sourceTree = "<group>"; };
+		F32640341D8B0FD0001C160E /* TeacherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TeacherTableViewCell.xib; path = UI/TeacherTableViewCell.xib; sourceTree = "<group>"; };
 		F39CC1171D78338B001674A1 /* StudentClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentClass.h; path = "coredata-test/Model/StudentClass.h"; sourceTree = SOURCE_ROOT; };
 		F39CC1181D78338B001674A1 /* StudentClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentClass.m; path = "coredata-test/Model/StudentClass.m"; sourceTree = SOURCE_ROOT; };
 		F39CC1191D78338B001674A1 /* StudentClass+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "StudentClass+CoreDataProperties.h"; path = "coredata-test/Model/StudentClass+CoreDataProperties.h"; sourceTree = SOURCE_ROOT; };
@@ -89,6 +104,8 @@
 		F39CC14C1D783423001674A1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "coredata-test/PrefixHeader.pch"; sourceTree = SOURCE_ROOT; };
 		F3BDBCDC1BD4FAC00036A70B /* CoreData Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3BF289F1BE9FBA6002AC4AE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F3C4DE4F1D8F178400D5F57F /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTableView.h; path = UI/BaseTableView.h; sourceTree = "<group>"; };
+		F3C4DE501D8F178400D5F57F /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTableView.m; path = UI/BaseTableView.m; sourceTree = "<group>"; };
 		F3DE1A1F1D787A3E00E590D1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +132,22 @@
 				F312E0931D8549D800168585 /* StudentClassRealmDAOImpl.m */,
 			);
 			name = "RealmImpl (fake)";
+			sourceTree = "<group>";
+		};
+		F32640291D8B0F42001C160E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F3C4DE4F1D8F178400D5F57F /* BaseTableView.h */,
+				F3C4DE501D8F178400D5F57F /* BaseTableView.m */,
+				F326402A1D8B0F8D001C160E /* DAOTableView.h */,
+				F326402B1D8B0F8D001C160E /* DAOTableView.m */,
+				F326402E1D8B0FA6001C160E /* ActiveRecordTableView.h */,
+				F326402F1D8B0FA6001C160E /* ActiveRecordTableView.m */,
+				F32640321D8B0FD0001C160E /* TeacherTableViewCell.h */,
+				F32640331D8B0FD0001C160E /* TeacherTableViewCell.m */,
+				F32640341D8B0FD0001C160E /* TeacherTableViewCell.xib */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		F39986C61BECA0F1006724D7 /* DAO */ = {
@@ -171,6 +204,7 @@
 				F39CC13B1D7833D0001674A1 /* AppDelegate.h */,
 				F39CC13C1D7833D0001674A1 /* AppDelegate.m */,
 				F39CC1411D7833EA001674A1 /* LaunchScreen.storyboard */,
+				F32640291D8B0F42001C160E /* UI */,
 				F39CC1421D7833EA001674A1 /* Main.storyboard */,
 				F39CC1451D78340F001674A1 /* MainViewController.h */,
 				F39CC1461D78340F001674A1 /* MainViewController.m */,
@@ -226,6 +260,8 @@
 				F312E08B1D85432E00168585 /* StudentClassCoreDataDAOImpl.h in Headers */,
 				F312E0981D854A0700168585 /* RootRealmDAOImpl.h in Headers */,
 				F39CC1501D783423001674A1 /* PrefixHeader.pch in Headers */,
+				F32640301D8B0FA6001C160E /* ActiveRecordTableView.h in Headers */,
+				F32640351D8B0FD0001C160E /* TeacherTableViewCell.h in Headers */,
 				F39CC1471D78340F001674A1 /* MainViewController.h in Headers */,
 				F39CC1331D7833A9001674A1 /* RootCoreDataDAOImpl.h in Headers */,
 				F39CC1351D7833A9001674A1 /* TeacherCoreDataDAOImpl.h in Headers */,
@@ -238,8 +274,10 @@
 				F39CC11F1D78338B001674A1 /* StudentClass.h in Headers */,
 				F39CC1391D7833BA001674A1 /* CoreDataManager.h in Headers */,
 				F39CC1251D78338B001674A1 /* Teacher+CoreDataProperties.h in Headers */,
+				F3C4DE511D8F178400D5F57F /* BaseTableView.h in Headers */,
 				F39CC12D1D78339C001674A1 /* DAOProtocol.h in Headers */,
 				F312E0901D85497800168585 /* TeacherRealmDAOImpl.h in Headers */,
+				F326402C1D8B0F8D001C160E /* DAOTableView.h in Headers */,
 				F39CC14D1D783423001674A1 /* Defined.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +310,7 @@
 		F3BDBCD41BD4FAC00036A70B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Keyrus;
 				TargetAttributes = {
 					F3BDBCDB1BD4FAC00036A70B = {
@@ -310,7 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F39CC14E1D783423001674A1 /* Info.plist in Resources */,
+				F32640371D8B0FD0001C160E /* TeacherTableViewCell.xib in Resources */,
 				F39CC1401D7833D8001674A1 /* Assets.xcassets in Resources */,
 				F39CC1441D7833EA001674A1 /* Main.storyboard in Resources */,
 				F39CC1431D7833EA001674A1 /* LaunchScreen.storyboard in Resources */,
@@ -348,14 +386,18 @@
 				F39CC1261D78338B001674A1 /* Teacher+CoreDataProperties.m in Sources */,
 				F39CC1341D7833A9001674A1 /* RootCoreDataDAOImpl.m in Sources */,
 				F39CC1481D78340F001674A1 /* MainViewController.m in Sources */,
+				F3C4DE521D8F178400D5F57F /* BaseTableView.m in Sources */,
 				F312E0991D854A0700168585 /* RootRealmDAOImpl.m in Sources */,
 				F39CC1221D78338B001674A1 /* StudentClass+CoreDataProperties.m in Sources */,
 				F39CC1201D78338B001674A1 /* StudentClass.m in Sources */,
+				F326402D1D8B0F8D001C160E /* DAOTableView.m in Sources */,
 				F39CC1241D78338B001674A1 /* Teacher.m in Sources */,
 				F312E0951D8549D800168585 /* StudentClassRealmDAOImpl.m in Sources */,
 				F39CC13E1D7833D0001674A1 /* AppDelegate.m in Sources */,
 				F39CC12C1D78339C001674A1 /* DAOFactory.m in Sources */,
+				F32640311D8B0FA6001C160E /* ActiveRecordTableView.m in Sources */,
 				F3DE1A201D787A3E00E590D1 /* Model.xcdatamodeld in Sources */,
+				F32640361D8B0FD0001C160E /* TeacherTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -375,8 +418,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -398,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -410,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -419,8 +465,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -436,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

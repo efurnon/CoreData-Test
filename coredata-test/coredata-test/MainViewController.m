@@ -17,7 +17,6 @@
     [super viewDidLoad];
     
     NSObject<TeacherDAO> *teacherDao = [DAOFactory teacherDAO];
-    NSObject<StudentClassDAO> *studentClassDao = [DAOFactory studentClassDAO];
     
     Teacher *t = [teacherDao newObject];
     t.lastName = @"Smith";
@@ -49,10 +48,27 @@
     ((Teacher *)teachers[0]).age = @45;
     [teacherDao saveObject:teachers[0]];
     
-    NSArray *studentClasses = [studentClassDao classesWhoseCountMoreThan:30];
+    [self.daoTableView setCustomDelegate:self];
+    [self.daoTableView reload];
     
-    NSLog(@"Count : %lu", [studentClasses count]);
-    [teacherDao deleteAll];
+    [self.activeRecordTableView setCustomDelegate:self];
+    [self.activeRecordTableView reload];
+}
+
+
+#pragma mark -
+#pragma mark Custom Table View Delegate Methods
+
+- (void)dataChangedForTableView:(BaseTableView *)tableView
+{
+    if(tableView == self.daoTableView)
+    {
+        [self.activeRecordTableView reload];
+    }
+    else if(tableView == self.activeRecordTableView)
+    {
+        [self.daoTableView reload];
+    }
 }
 
 @end

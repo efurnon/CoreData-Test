@@ -3,7 +3,7 @@
 //  CoreData Test
 //
 //  Created by Emmanuel Furnon on 11/09/2016.
-//  Copyright © 2016 Keyrus. All rights reserved.
+//  Copyright © 2016 Emmanuel Furnon. All rights reserved.
 //
 
 #import "StudentClass.h"

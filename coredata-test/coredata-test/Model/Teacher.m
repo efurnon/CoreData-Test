@@ -22,6 +22,11 @@
 }
 
 
+- (NSString *)summary
+{
+    return [NSString stringWithFormat:@"%@ %@, %@", self.firstName, self.lastName, self.age];
+}
+
 #pragma mark -
 #pragma mark Instance methods
 

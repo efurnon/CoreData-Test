@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -14,13 +15,49 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8dd-GX-VgO">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lKP-gO-0ji" customClass="DAOTableView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5GU-u6-b76" customClass="ActiveRecordTableView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAO Table View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWk-nq-b1O">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active Record Table View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lr9-4C-rPE">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lKP-gO-0ji" firstAttribute="centerX" secondItem="8dd-GX-VgO" secondAttribute="centerX" id="2Q7-tB-edz"/>
+                            <constraint firstItem="5GU-u6-b76" firstAttribute="centerX" secondItem="8dd-GX-VgO" secondAttribute="centerX" id="2bo-uL-5CA"/>
+                            <constraint firstItem="PWk-nq-b1O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="5a1-gp-I3o"/>
+                            <constraint firstItem="lr9-4C-rPE" firstAttribute="centerX" secondItem="8dd-GX-VgO" secondAttribute="centerX" id="7M5-qO-H3J"/>
+                            <constraint firstItem="PWk-nq-b1O" firstAttribute="centerX" secondItem="8dd-GX-VgO" secondAttribute="centerX" id="FC6-Mv-9n2"/>
+                            <constraint firstItem="lKP-gO-0ji" firstAttribute="top" secondItem="PWk-nq-b1O" secondAttribute="bottom" constant="20" id="KN2-xk-9QX"/>
+                            <constraint firstItem="5GU-u6-b76" firstAttribute="top" secondItem="lr9-4C-rPE" secondAttribute="bottom" constant="19" id="N00-2U-beg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5GU-u6-b76" secondAttribute="bottom" id="Wht-Hx-jAX"/>
+                            <constraint firstItem="5GU-u6-b76" firstAttribute="height" secondItem="lKP-gO-0ji" secondAttribute="height" id="a2f-sh-2nI"/>
+                            <constraint firstItem="lr9-4C-rPE" firstAttribute="top" secondItem="lKP-gO-0ji" secondAttribute="bottom" constant="20" id="cHu-kJ-cVG"/>
+                            <constraint firstItem="5GU-u6-b76" firstAttribute="width" secondItem="8dd-GX-VgO" secondAttribute="width" id="dvF-EX-D2K"/>
+                            <constraint firstItem="lKP-gO-0ji" firstAttribute="width" secondItem="8dd-GX-VgO" secondAttribute="width" id="poD-4V-jrD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="knD-Pp-eVE"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="activeRecordTableView" destination="5GU-u6-b76" id="cdE-6G-Kut"/>
+                        <outlet property="daoTableView" destination="lKP-gO-0ji" id="A83-MN-qbw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
