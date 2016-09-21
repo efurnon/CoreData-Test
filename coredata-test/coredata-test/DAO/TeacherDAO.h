@@ -54,7 +54,7 @@
  @method listByPredicate:fallback:
  @abstract Get all teachers sorted by specific predicate and return the fallback if nil.
  @param predicate : The search predicate.
- @param predicate : The fallback to return if response is nil
+ @param list : The fallback to return if response is nil
  @return An array of teachers.
  */
 - (NSArray *)listByPredicate:(NSPredicate *)predicate fallback:(NSArray *)list;

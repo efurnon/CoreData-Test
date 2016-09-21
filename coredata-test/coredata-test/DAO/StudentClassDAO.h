@@ -62,7 +62,7 @@
  @method listByPredicate:fallback:
  @abstract Get all studentClasses sorted by specific predicate and return the fallback if nil.
  @param predicate : The search predicate.
- @param predicate : The fallback to return if response is nil
+ @param list : The fallback to return if response is nil
  @return An array of studentClasses.
  */
 - (NSArray *)listByPredicate:(NSPredicate *)predicate fallback:(NSArray *)list;

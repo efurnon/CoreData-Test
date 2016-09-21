@@ -15,7 +15,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
+    [[CoreDataManager instance] removeDatabase];
     NSObject<TeacherDAO> *teacherDao = [DAOFactory teacherDAO];
     
     Teacher *t = [teacherDao newObject];
@@ -23,10 +24,6 @@
     t.firstName = @"Bob";
     t.age = @24;
     t.experience = @2;
-    
-    [teacherDao saveObject:t];
-    
-    NSArray *teachers = [teacherDao allObjects];
     
     Teacher *t2 = [teacherDao newObject];
     t2.lastName = @"Doe";
@@ -40,13 +37,36 @@
     t3.age = @24;
     t3.experience = @2;
     
+    [teacherDao saveObject:t];
     [teacherDao saveObject:t2];
     [teacherDao saveObject:t3];
     
-    teachers = [teacherDao allObjects];
+    t3.age = @45;
+    [teacherDao saveObject:t3];
     
-    ((Teacher *)teachers[0]).age = @45;
-    [teacherDao saveObject:teachers[0]];
+    Teacher *a = [[Teacher alloc] init];
+    a.lastName = @"Spencer";
+    a.firstName = @"Bud";
+    a.age = @65;
+    
+    Teacher *a2 = [[Teacher alloc] init];
+    a2.firstName = @"Terence";
+    a2.lastName = @"Hill";
+    a2.age = @63;
+    a2.experience = @25;
+    
+    Teacher *a3 = [[Teacher alloc] init];
+    a3.firstName = @"Enzo";
+    a3.lastName = @"Barboni";
+    a3.age = @80;
+    a3.experience = @42;
+    
+    [a save];
+    [a2 save];
+    [a3 save];
+    
+    a3.age = @53;
+    [a3 save];
     
     [self.daoTableView setCustomDelegate:self];
     [self.daoTableView reload];

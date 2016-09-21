@@ -10,7 +10,7 @@
 #import "TeacherDAO.h"
 
 /*!
- @protocol DAOFactory
+ @interface DAOFactory
  @abstract Deliver all DAOImpls.
  @discussion For each method return the DAOImpl corresponding to the mode of
  database (in the current case CoreData).
